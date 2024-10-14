@@ -126,7 +126,7 @@ In Figura \ref{fig:ex-c} viene mostrato un programma che stampa quattro indirizz
     \label{fig:ex-c}
 \end{figure}
 
-In Figura \ref{fig:ex-c2} viene mostrato il risultato dell'esecuzione del programma.s
+In Figura \ref{fig:ex-c2} viene mostrato il risultato dell'esecuzione del programma.
 
 \begin{figure}[ht]
     \centering
@@ -142,6 +142,7 @@ ogni processo del sistema (nominata con l'id del processo nel sistema).
 Ciò che viene fatto in Figura \ref{fig:ex-c3} è stato usare \texttt{pgrep} per trovare l'id associato al processo \textit{address\_space} (il
 programma C).
 
+\newpage
 In ogni linea:
 \begin{itemize}
     \item il primo numero è l'indirizzo di partenza in esadecimale, e dopo '-' c'è l'indirizzo di fine
@@ -164,5 +165,55 @@ Dopo ci sono una serie di mapping di \textit{libc} e \textit{ld}, una serie di l
 caricate in tutti i processi. Se il processo utilizza delle liberie aggiuntive saranno caricate in questa zona.
 
 Infine, negli indirizzi più alti, si trova lo \textcolor{purple}{\textbf{\textit{stack}}}.
+
+\section{Rappresentazione di interi}
+
+\subsubsection{Esempio}
+
+\texttt{unsigned int:} intero a 32 bit senza segno 
+
+$Valore = 100.000.000 \rightarrow$ 0x05F5E100
+
+La rappresentazione in \textit{esadecimale} è comoda perché \textbf{due cifre corrispondono esattamente
+ad un byte}: si va da 00 a FF, ovvero 255, che è il range di valori possibili per un byte ($2^8$).
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.75\linewidth]{images/rappr-interi.png}
+    \caption{Rappresentazioni Big-endian e Little-endian}
+\end{figure}
+
+\newpage
+Esistono due tipi di rappresentazioni:
+\begin{itemize}
+    \item Big-Endian: il primo byte è quello più significativo
+    \item Little-endian: il primo byte è quello meno significativo; questa rappresentazione
+    è più comoda in termini computazionali
+\end{itemize}
+
+\section{Rappresentazione di tipi C (x86)}
+
+\begin{itemize}
+    \item \textbf{Interi little-endian:}
+    \begin{itemize}
+        \item per gli interi con segno si utilizza la notazione \textit{complemento a due}
+        \item \texttt{char, int, short, long:} sono tutti degli interi a diversi lunghezze (bit)
+    \end{itemize}
+    \item \textbf{Puntatori:} sono \textit{interi unsigned}; il loro valore corrisponde all'\textbf{indirizzo di memoria
+    a cui punta}; è necessario un intero sufficientemente grande a contenere un qualsiasi indirizzo virtuale (32/64 bit a seconda del sistema)
+    \item \textbf{Array:} C disponi gli elementi sequenzialmente, uno dietro l'altro;
+    \item \textbf{Strutture:} i campi sono disposti sequenzialmente in ordine di dichiarazione; il compilatore potrebbe
+    introdurre del \textit{padding} (spazio vuoto) perché alcuni tipi hanno dei requisiti di allineamento (vogliono essere ad indirizzi di memoria multipli di certi numeri)
+\end{itemize}
+
+\section{Corruzione di memoria}
+
+Un processo è determinato dalla sua memoria: l'eseguibile è caricato in memoria, il codice lavora sulla memoria.
+
+Se riuscissimo a controllare e modificare la memoria di un programma in un modo diverso
+da quello previsto da quello dal programmatore, allora avremmo il controllo del processo!
+
+
+
 
 
