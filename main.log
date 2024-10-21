@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.7)  15 OCT 2024 00:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.7)  21 OCT 2024 15:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -81,7 +81,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count268
 \l__pdf_internal_box=\box51
-) (./main.aux (./chapters/chapter1.aux) (./chapters/chapter2.aux))
+) (./main.aux (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -226,25 +226,62 @@ File: images/static-ghidra2.png Graphic file (type png)
 <use images/static-ghidra2.png>
 Package pdftex.def Info: images/static-ghidra2.png  used on input line 238.
 (pdftex.def)             Requested size: 172.5pt x 218.0041pt.
-) [13] [14 <./images/static-ghidra1.png> <./images/static-ghidra2.png>] (./main.aux (./chapters/chapter1.aux) (./chapters/chapter2.aux))
+) [13] [14 <./images/static-ghidra1.png> <./images/static-ghidra2.png>]
+\openout2 = `chapters/chapter3.aux'.
+
+ (./chapters/chapter3.tex
+Capitolo 3.
+<images/codeex.png, id=85, 799.98875pt x 272.01625pt>
+File: images/codeex.png Graphic file (type png)
+<use images/codeex.png>
+Package pdftex.def Info: images/codeex.png  used on input line 19.
+(pdftex.def)             Requested size: 172.5pt x 58.65253pt.
+[15
+
+
+
+
+ <./images/codeex.png>]
+<images/out-bounds1.png, id=90, 719.68875pt x 401.5pt>
+File: images/out-bounds1.png Graphic file (type png)
+<use images/out-bounds1.png>
+Package pdftex.def Info: images/out-bounds1.png  used on input line 66.
+(pdftex.def)             Requested size: 258.75pt x 144.3561pt.
+<images/out-bounds2.png, id=91, 1048.91875pt x 429.605pt>
+File: images/out-bounds2.png Graphic file (type png)
+<use images/out-bounds2.png>
+Package pdftex.def Info: images/out-bounds2.png  used on input line 77.
+(pdftex.def)             Requested size: 345.0pt x 141.2981pt.
+ [16 <./images/out-bounds1.png>] [17 <./images/out-bounds2.png>]
+<images/primo-of.png, id=100, 579.16376pt x 409.53pt>
+File: images/primo-of.png Graphic file (type png)
+<use images/primo-of.png>
+Package pdftex.def Info: images/primo-of.png  used on input line 118.
+(pdftex.def)             Requested size: 258.75pt x 182.96202pt.
+<images/primo-of2.png, id=101, 518.93875pt x 364.36125pt>
+File: images/primo-of2.png Graphic file (type png)
+<use images/primo-of2.png>
+Package pdftex.def Info: images/primo-of2.png  used on input line 139.
+(pdftex.def)             Requested size: 258.75pt x 181.68535pt.
+) [18 <./images/primo-of.png>] [19 <./images/primo-of2.png>] (./main.aux (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3412 strings out of 474222
- 56468 string characters out of 5748733
+ 3474 strings out of 474222
+ 58222 string characters out of 5748733
  1931975 words of memory out of 5000000
- 25649 multiletter control sequences out of 15000+600000
+ 25704 multiletter control sequences out of 15000+600000
  564744 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,65p,281b,229s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,6n,65p,281b,231s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (15 pages, 779376 bytes).
+Output written on main.pdf (20 pages, 1225430 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
+ 163 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

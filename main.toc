@@ -29,3 +29,11 @@
 \contentsline {subsection}{\numberline {2.4.2}Alcune istruzioni di base}{12}{}%
 \contentsline {subsection}{\numberline {2.4.3}Salti condizionali}{13}{}%
 \contentsline {section}{\numberline {2.5}Reversing statico con Ghidra}{13}{}%
+\contentsline {chapter}{\numberline {3}Buffer Overflows}{15}{}%
+\contentsline {subsubsection}{Buffer overflow}{16}{}%
+\contentsline {subsubsection}{Conseguenze del buffer overflow}{16}{}%
+\contentsline {section}{\numberline {3.1}Accessi out-of-bounds}{16}{}%
+\contentsline {subsubsection}{Un altro esempio}{17}{}%
+\contentsline {section}{\numberline {3.2}Pattern pericolosi}{17}{}%
+\contentsline {section}{\numberline {3.3}Un primo overflow}{18}{}%
+\contentsline {subsubsection}{Come possiamo fare?}{18}{}%
